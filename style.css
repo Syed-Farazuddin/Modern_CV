@@ -1,53 +1,82 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    /* list-style: none; */
 }
-body{
-    background:black;
-    /* display: flex;
-    justify-content: center; */
+
+body {
+    background: black;
 }
-hr{
+
+td {
+    width: 600px;
+}
+
+td ul li {
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+}
+
+
+hr {
     display: none;
 }
-.hero{
+
+.hero {
     height: auto;
     width: 100%;
 }
-nav{
-    /* background:#0e3742; */
+
+nav {
     display: flex;
     align-items: center;
+    box-shadow: 0 0 10px rgba(250, 250, 250, 0.6);
+    margin-bottom: 3%;
     justify-content: space-between;
     padding: 40px 10%;
+    position: sticky;
+    top: 1;
+    z-index: 10;
 }
-.brand{
+
+.footer {
+    box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.6);
+
+}
+
+.brand {
     font-size: 30px;
     font-weight: bold;
     color: #103778;
 }
-ul{
+
+ul {
     display: block;
-    list-style-type: disc;
+    list-style-type: none;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
-    color:#03bcf4;
+    color: #03bcf4;
 }
-a{
+
+a {
     color: #0593A2;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
 }
-nav ul li a{
+
+nav ul li a {
     font-size: 20px;
     display: inline-block;
     list-style: none;
@@ -55,7 +84,8 @@ nav ul li a{
     padding: 10px 20px;
     font-weight: bold;
 }
-button{
+
+button {
     padding: 20px;
     border-radius: 20%;
     font-size: 20px;
@@ -63,90 +93,124 @@ button{
     font-weight: bold;
 
 }
-/* hr{
-    border-bottom: 0px;
-    border-style: dotted;
-    color: white;
-    width: 40%;
-    align-items: center; */
-/* } */
-.main{
+
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-img{
-    /* float: left; */
-     width: 300px; 
-    /* height: 150px; */
+
+img {
+    width: 300px;
     border-radius: 20%;
     margin-top: 10px;
     padding: 10px;
-    /* align-items: center; */
 }
-.name{
+
+.name {
     font-size: 4rem;
     text-align: center;
     margin-left: 5px;
     color: #0e3742;
     animation: animate 5s linear infinite;
 }
-.intro{
-    /* line-height:0px; */
+
+.intro {
     margin-left: 5px;
 }
-p{
+
+p.name-abt {
     background: linear-gradient(to left, #03bcf4, #8C8C8C);
     margin-top: 10px;
-    /* -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; */
 }
-h2, .name{
+
+h2,
+.name {
     font-size: 4rem;
-    /* margin-right: 10%; */
 }
-h2{
+
+h2 {
     color: #8C8C8C;
 }
-.about{
+
+.about {
     margin-right: 10%;
 }
-div,h2{
+
+div,
+h2 {
     display: inline-block;
 }
-@keyframes animate{
-    0% ,18%, 20% , 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+
+@keyframes animate {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
         color: #0e3742;
         text-shadow: none;
     }
-    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
         color: #fff;
         text-shadow: 0 0 10px #03bcf4,
-        0 0 20px #03bcf4,
-        0 0 40px #03bcf4,
-        0 0 80px #03bcf4,
-        0 0 160px #03bcf4;
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 160px #03bcf4;
 
     }
 }
-.second{
+
+.second {
     display: flex;
     align-items: center;
-    justify-content:  center;
+    justify-content: center;
+    padding: 10px;
 }
-h1{
+
+h1 {
     width: 100%;
     text-align: center;
     font-size: 3.5rem;
     margin-top: 25px;
     color: #848db3;
 }
-.aboutme{
+
+nav {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.aboutme {
     width: 100px;
     height: 100px;
     line-height: 10px;
 }
-.my_info{
+
+nav .menu-icon {
+    display: none;
+}
+
+.my_info {
     margin-top: 5%;
     width: 30%;
     color: #8997bd;
@@ -155,9 +219,11 @@ h1{
     text-align: justify;
     justify-content: space-around;
 }
-.info{
-    margin-top: 5%;    
+
+.info {
+    margin-top: 5%;
 }
+
 ul li {
     color: #8997bd;
     list-style: none;
@@ -165,23 +231,26 @@ ul li {
     margin-top: 25px;
     font-size: 20px;
 }
-.edu{
+
+.edu {
     margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-i{
-    color: #8997bd;
+
+i {
     margin-right: 20px;
 }
-.education{
+
+.education {
     display: flex;
     align-items: center;
     justify-content: space-around;
 
 }
-.editme{
+
+.editme {
     margin-top: 5%;
     padding: 10px;
     display: flex;
@@ -189,35 +258,42 @@ i{
     justify-content: center;
     text-align: center;
 }
-table ul li{
-    list-style: initial;
+
+table ul li {
+    list-style: none;
 }
-.heads{
+
+.heads {
     align-items: left;
     color: #848db3;
     font-size: 25px;
 }
-.heading,i{
+
+.heading,
+i {
     color: #03bcf4;
 }
-.skill{
+
+.skill {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5% 0px; 
+    margin: 5% 0px;
 }
 
 a:hover {
     color: #8C8C8C;
     transform: scale(1.1);
 }
-button:hover{
+
+button:hover {
     color: white;
     background: #404040;
     border: 1px solid white;
     transform: scale(1.1);
 }
-.progress{
+
+.progress {
     background-color: white;
     display: inline-block;
     color: #03bcf4;
@@ -226,7 +302,8 @@ button:hover{
     margin-top: 1%;
     align-items: left;
 }
-.skill-set{
+
+.skill-set {
     text-align: left;
     align-items: left;
     flex: 1;
@@ -236,36 +313,42 @@ button:hover{
     background-color: #BFBFBF;
 }
 
-.css{
-    width: 95% ;
+.css {
+    width: 95%;
 }
-.js{
+
+.js {
     width: 85%;
 }
-.python{
+
+.python {
     width: 92%;
 }
-span{
+
+span {
     color: black;
 }
-.java{
+
+.java {
     width: 80%;
 }
-h3{
-    color:#848db3;
+
+h3 {
+    color: #848db3;
     font-size: 35px;
 }
-.second{
+
+.second {
     margin-top: 2.5%;
 }
 
-#social{
+#social {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.socials{
+.socials {
     height: 100px;
     width: 100px;
     line-height: 110px;
@@ -275,7 +358,8 @@ h3{
     margin: 20px;
     /* padding: 20px; */
 }
-a i{
+
+a i {
     font-size: 30px;
     text-align: center;
     margin: 10px;
@@ -283,6 +367,350 @@ a i{
     transition: all 0.2s linear;
 }
 
-a:hover i{
+a:hover i {
     transform: scale(1.4);
+}
+
+.studied {
+    color: #C7E8CA;
+}
+
+.sidebar {
+    display: none;
+}
+
+.pop-sidebar {
+    display: initial;
+    background-color: rgba(0, 0, 0, .8);
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-left: 2%;
+    z-index: 1;
+    padding-top: 80px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+}
+
+.sidebar button {
+    padding: 0.4rem;
+    margin-left: 40px;
+}
+
+/* nav . */
+
+
+/* 1150p`x Width  */
+
+
+@media (max-width:1150px) {
+    nav {
+        padding: 0.8rem;
+    }
+
+    nav div .logo {
+        font-size: 12px;
+    }
+}
+
+
+/* 950px Width  */
+
+
+@media (max-width:950px) {
+    nav {
+        padding: 0.3rem;
+    }
+
+    nav .brand {
+        font-size: 25px;
+        margin-left: 8px;
+    }
+
+    .mypic {
+        width: 200px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    button {
+        padding: 15px;
+        margin-right: 8px;
+        border-radius: 20%;
+        font-size: 16px;
+        color: #333333;
+        font-weight: bold;
+    }
+
+    td {
+        width: 700px;
+    }
+}
+
+
+/* 950px Width  */
+
+
+@media (max-width:950px) {
+
+
+    .hi {
+        display: none;
+    }
+
+    main .name {
+        font-size: 2.5rem;
+    }
+
+    .my_info {
+        font-size: 14px;
+        margin-right: 7px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .heads {
+        font-size: 20px;
+        /* margin-right: 20px; */
+    }
+
+    td {
+        width: 500px;
+    }
+
+    .socials {
+        height: 70px;
+        width: 70px;
+        line-height: 80px;
+    }
+
+}
+
+
+
+/* 820px Width  */
+
+
+
+@media (max-width:820px) {
+
+    nav {
+        padding: 1rem;
+    }
+
+    nav .menu-icon {
+        display: initial;
+        font-size: 30px;
+    }
+
+    nav .menu-icon:hover {
+        transform: translate(1.1);
+        cursor: pointer;
+    }
+
+    nav .brand {
+        font-size: 2.5rem;
+    }
+
+    nav ul,
+    nav button {
+        display: none;
+    }
+}
+
+
+
+/* 750px Width */
+
+
+
+@media (max-width:750px) {
+    .second {
+        /* display: initial; */
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .my_info {
+        text-align: center;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .info {
+        display: none;
+    }
+
+    nav .menu-icon {
+        display: initial;
+        z-index: 10;
+    }
+
+    .info ul li {
+        margin-left: 10%;
+        text-align: justify;
+    }
+}
+
+
+/* Devices with Width 425px  */
+
+@media(max-width:426px) {
+    .main {
+        display: flex;
+    }
+
+    .mypic {
+        width: 180px;
+    }
+
+    div .name {
+        font-size: 1.5rem;
+        text-align: left;
+        margin-left: 4px;
+    }
+
+    .about p {
+        font-size: 15px;
+    }
+
+    .pop-sidebar {
+        width: 40%;
+        padding: 10px;
+        top: 10;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 1);
+        position: fixed;
+        top: 40px;
+        right: 0;
+    }
+
+    .about {
+        margin-right: 0;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+
+    nav .brand {
+        font-size: 25px;
+    }
+
+    nav .menu-icon {
+        font-size: 20px;
+    }
+
+    .heads {
+        font-size: 15px;
+    }
+
+    .skills ul li {
+        font-size: 14px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .second h3 {
+        font-size: 18px;
+    }
+
+    .socials {
+        height: 45px;
+        width: 45px;
+        line-height: 0px;
+    }
+
+}
+
+
+/* For Small devices with 375 Width */
+
+@media(max-width:376px) {
+
+    .main {
+        display: flex;
+
+    }
+
+    .mypic {
+        border-radius: 50%;
+        width: 150px;
+        float: left;
+    }
+
+    div .name {
+        font-size: 1.5rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .about p {
+        font-size: 10px;
+    }
+
+    .about {
+        margin-right: 0;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+
+    nav .brand {
+        font-size: 25px;
+    }
+
+    nav .menu-icon {
+        font-size: 20px;
+    }
+
+    .heads {
+        font-size: 15px;
+    }
+
+    .skills ul li {
+        font-size: 14px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .second h3 {
+        font-size: 18px;
+    }
+
+    .socials {
+        height: 45px;
+        width: 45px;
+        line-height: 0px;
+    }
+    .pop-sidebar{
+        width: 50%;
+    }
+
+    .sidebar ul li a{
+        margin-left: 0px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+    }
+    .sidebar button{
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 10px;
+        /* width: 70%; */
+        padding: 10px;
+    }
 }
